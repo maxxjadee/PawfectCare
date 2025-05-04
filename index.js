@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const savedName = localStorage.getItem('name');
 
     if (enteredEmail === savedEmail && enteredPassword === savedPassword) {
-        localStorage.setItem("loggedInUser", savedName); // <- This line is key
+        localStorage.setItem("loggedInUser", savedName);
         window.location.href = "welcome.html";
     } else {
         alert("Invalid email or password.");
